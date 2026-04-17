@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Crop Recommendation System
 
 ## Overview
@@ -121,3 +122,7 @@ root.mainloop()
 ## Conclusion
 
 This Crop Recommendation System leverages machine learning to provide accurate and reliable crop suggestions based on soil properties. The integration of multiple algorithms ensures robustness and high performance, making it a valuable tool for farmers and agronomists.
+=======
+# Crop-Recomendation-System
+The Crop Recommendation System is a machine learning-based application that predicts the most suitable crop to grow based on soil and environmental parameters.
+>>>>>>> 01d08038bf01891ad18b2024e5e5da11ba7aaa68
