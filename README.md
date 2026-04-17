@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 # Crop Recommendation System
-=======
-<<<<<<< HEAD
+
 # 🌾 Smart Crop Recommendation System
->>>>>>> e2082d77c72f74ff7bf0954ba76e7f891a72cf0c
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
@@ -214,6 +211,3 @@ Give it a star ⭐ on GitHub!
 > Built an end-to-end ML system with an interactive GUI, optimized user input using sliders, handled dataset inconsistencies, and enhanced UX with real-time predictions and visualization.
 
 ---
-
-
->>>>>>> e2082d77c72f74ff7bf0954ba76e7f891a72cf0c
