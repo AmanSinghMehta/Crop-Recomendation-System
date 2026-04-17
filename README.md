@@ -74,11 +74,12 @@ The following models were implemented and compared:
 ---
 
 ## 📸 Application Preview
-### GUI Interface
+### 1. GUI Interface
 <img width="1245" height="958" alt="image" src="https://github.com/user-attachments/assets/ae9e8ab8-283f-485e-be01-945533d6f0ca" />
 
+---
 
-### Interface after prediction
+### 2. Interface after prediction
 <img width="1249" height="1055" alt="image" src="https://github.com/user-attachments/assets/d01c19b1-3c86-4aba-8eaa-361dde0a49ee" />
 
 
