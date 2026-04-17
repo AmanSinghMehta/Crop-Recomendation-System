@@ -1,33 +1,117 @@
 <<<<<<< HEAD
-# Crop Recommendation System
+# 🌾 Smart Crop Recommendation System
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
+![GUI](https://img.shields.io/badge/GUI-CustomTkinter-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-The Crop Recommendation System is designed to predict the best crop to cultivate based on specific soil and environmental parameters. Using machine learning algorithms, this system analyzes data such as nutrient content, pH level, and other soil properties to recommend the most suitable crop.
+---
 
-## Features
+## 📌 Overview
 
-- **Decision Tree**
-- **Naive Bayes**
-- **Support Vector Machine (SVM)**
-- **Logistic Regression**
-- **Random Forest**
+The **Smart Crop Recommendation System** is a machine learning application designed to recommend the most suitable crop based on soil and environmental parameters.
 
-## Dataset
+This project combines **data science, machine learning, and modern UI design** to deliver an intuitive and interactive user experience.
 
-The dataset contains the following features for each sample:
+---
 
-- N (Nitrogen) in ppm
-- P (Phosphorus) in ppm
-- K (Potassium) in ppm
-- pH
-- EC (Electrical Conductivity) in mS/cm
-- S (Sulfur) in ppm
-- Cu (Copper) in ppm
-- Fe (Iron) in ppm
-- Mn (Manganese) in ppm
-- Zn (Zinc) in ppm
-- B (Boron) in ppm
+## 🚀 Key Features
+
+* 🌱 Predicts best crop based on soil nutrients
+* 🎯 High accuracy (~97%) using Random Forest
+* 🎛️ Interactive slider-based input system
+* 🌙 Light/Dark mode support
+* 🖼️ Displays crop image dynamically
+* ⚡ Real-time prediction
+* 🧠 Data-driven feature ranges (handled outliers)
+
+---
+
+## 🧠 Machine Learning Models
+
+The following models were implemented and compared:
+
+* Decision Tree
+* Naive Bayes
+* Support Vector Machine (SVM)
+* Logistic Regression
+* **Random Forest (Best Performing Model)**
+
+---
+
+## 📊 Input Features
+
+| Feature | Description             |
+| ------- | ----------------------- |
+| N       | Nitrogen content        |
+| P       | Phosphorus content      |
+| K       | Potassium content       |
+| pH      | Soil pH level           |
+| EC      | Electrical Conductivity |
+| S       | Sulfur                  |
+| Cu      | Copper                  |
+| Fe      | Iron                    |
+| Mn      | Manganese               |
+| Zn      | Zinc                    |
+| B       | Boron                   |
+
+---
+
+## 🖥️ GUI Highlights
+
+* Built using **CustomTkinter**
+* Modern, responsive layout
+* Scrollable slider-based inputs
+* Theme-aware UI (Light & Dark mode)
+* Clean and user-friendly design
+
+---
+
+## 📸 Application Preview
+
+
+
+---
+
+## 📁 Project Structure
+
+```
+crop-recommendation/
+│
+├── Crop_Recommendation.ipynb
+├── Crop.csv
+├── README.md
+├── requirements.txt
+│
+├── images/
+│   ├── mango.jpg
+│   ├── grapes.jpg
+│   ├── potato.jpg
+│   ├── ragi.jpg
+│   ├── mulberry.jpg
+│   └── pomegranate.jpg
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone Repository
+
+```
+git clone https://github.com/your-username/crop-recommendation.git
+cd crop-recommendation
+```
+
+### 2. Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+---
+
 
 The target variable is the type of crop which includes:
 
@@ -68,61 +152,55 @@ prediction = RF.predict(data)
 print(prediction)  # Output: ['pomegranate']
 ```
 
-## GUI Application
-
-A GUI application is provided using `tkinter` to make it user-friendly for predictions.
-
-### Running the GUI Application
-
-1. **Install Dependencies**: Ensure you have `tkinter` and other dependencies installed.
-2. **Run the Application**: Execute the provided script to launch the GUI.
-
-```python
-import tkinter as tk
-from tkinter import ttk
-
-# Function to predict crop
-def predict_crop():
-    # Get values from entry fields
-    data = [float(entry.get()) for entry in entry_fields]
-
-    # Make prediction
-    prediction = RF.predict([data])
-
-    # Update result label
-    result_label.config(text=f'Predicted Crop: {prediction[0]}')
-
-# Create main window
-root = tk.Tk()
-root.title("Crop Prediction")
-root.geometry("500x400")
-
-# Create entry fields for each feature
-labels = ['N (Nitrogen)', 'P (Phosphorus)', 'K (Potassium)', 'pH', 'EC (Electrical Conductivity)', 'S (Sulfur)', 
-          'Cu (Copper)', 'Fe (Iron)', 'Mn (Manganese)', 'Zn (Zinc)', 'B (Boron)']
-entry_fields = []
-units = ['ppm', 'ppm', 'ppm', '', 'mS/cm', 'ppm', 'ppm', 'ppm', 'ppm', 'ppm', 'ppm']
-for idx, label in enumerate(labels):
-    ttk.Label(root, text=f"Enter the value for {label} ({units[idx]}):").grid(row=idx, column=0, padx=10, pady=5, sticky="e")
-    entry = ttk.Entry(root)
-    entry.grid(row=idx, column=1, padx=10, pady=5, sticky="w")
-    entry_fields.append(entry)
-
-# Button to predict
-predict_button = ttk.Button(root, text="Predict", command=predict_crop)
-predict_button.grid(row=len(labels), column=0, columnspan=2, pady=10)
-
-# Label to display prediction
-result_label = ttk.Label(root, text="")
-result_label.grid(row=len(labels)+1, column=0, columnspan=2)
-
-root.mainloop()
-```
-
 ## Conclusion
 
 This Crop Recommendation System leverages machine learning to provide accurate and reliable crop suggestions based on soil properties. The integration of multiple algorithms ensures robustness and high performance, making it a valuable tool for farmers and agronomists.
 =======
 # Crop-Recomendation-System
 The Crop Recommendation System is a machine learning-based application that predicts the most suitable crop to grow based on soil and environmental parameters.
->>>>>>> 01d08038bf01891ad18b2024e5e5da11ba7aaa68
+---
+
+## 💡 Key Improvements
+
+* Replaced manual inputs with sliders for better UX
+* Handled outliers for realistic predictions
+* Integrated image visualization
+* Implemented adaptive UI (theme switching)
+
+---
+
+## 🔮 Future Enhancements
+
+* 📊 Feature importance visualization
+* 🌐 Deployment with Flask/Streamlit
+* 🌍 Weather API integration
+* 📱 Mobile application version
+* 🤖 AI assistant for farming guidance
+
+---
+
+## 👨‍💻 Author
+
+**Aman Singh**
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ If you like this project
+
+Give it a star ⭐ on GitHub!
+
+---
+
+## 🧠 Interview Insight
+
+> Built an end-to-end ML system with an interactive GUI, optimized user input using sliders, handled dataset inconsistencies, and enhanced UX with real-time predictions and visualization.
+
+---
+
+
