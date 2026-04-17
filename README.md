@@ -74,7 +74,11 @@ The following models were implemented and compared:
 ---
 
 ## 📸 Application Preview
+### GUI Interface
+D:\Gihub_projects\CropRecommendation-\images\screenshot 1.png
 
+### Interface after prediction
+D:\Gihub_projects\CropRecommendation-\images\screenshot 2.png
 
 
 ---
